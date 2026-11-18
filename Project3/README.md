@@ -1,1 +1,2 @@
-# Project 3: Precision CNC Lathe Power Chuck
+# Project 3: Precision Planetary Epicyclic Gear Reducer (3:1)
+
