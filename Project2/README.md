@@ -1,1 +1,3 @@
-# Project 2: Precision CNC Lathe Power Chuck
+# Project 2: Precision 6-Slot Maltese Cross Geneva Indexing Drive
+
+
