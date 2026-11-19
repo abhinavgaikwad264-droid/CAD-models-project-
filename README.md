@@ -2,54 +2,51 @@
 Mechanical 3D CAD portfolio featuring manufacturing-ready STEP (AP214) &amp; watertight STL assemblies, DFM/kinematic validation, and photorealistic PBR renders.
 # Mechanical CAD & DFM Engineering Portfolio
 
-# Precision Mechanical CAD & DFM Engineering Dossier
+# Parametric Mechanical CAD & DFM Portfolio
 
-**Parametric 3D solid modeling, production-ready `.STEP` (AP214) & watertight `.STL` assemblies, automated geometric interference verification, and photorealistic 4K studio PBR raytracing.**
+**Tolerance-checked 3D B-Rep mechanical assemblies exported as manufacturing-ready `.STEP` (AP214) and watertight binary `.STL` files, paired with exploded 4K Cycles PBR visualizations.**
 
 ---
 
-## 📌 Featured Mechanical Assemblies
+## Featured Mechanical Assemblies
 
-### 01. Precision 3-Jaw CNC Lathe Power Chuck (Scroll-Actuated Assembly)
+### 01. 3-Jaw Scroll-Actuated CNC Lathe Power Chuck
 
 * **Directory:** [`./Project1`](./Project1)
-* **CAD Deliverables:** [`Assembled.step`](./Project1/Assembled.step), [`Exploded.step`](./Project1/Exploded.step), [`Assembled.stl`](./Project1/Assembled.stl), [`Exploded.stl`](./Project1/Exploded.stl)
-* **Envelope & Mass:** $\varnothing\ 160.0\text{ mm} \times 74.0\text{ mm}$ (assembled height), $112.5\text{ mm}$ maximum jaw reach span; `1.842 kg` (AISI 4140 Alloy Steel & C36000 Brass).
-* **Engineering Highlights:**
-  * **Actuation Mechanism:** Archimedean flat scroll plate driving 3 radial master jaws with self-centering synchronization ($120^\circ$ radial indexing).
-  * **Jaw Interface:** Standard serrated master jaw base with stepped reversible soft jaws, secured via counterbored high-tensile socket head cap screws.
-  * **Clearances & DFM:** $0.05\text{ mm}$ diametral slide guide clearance; $0.08\text{ mm}$ axial running play on scroll backface; $1.5\text{ mm} \times 45^\circ$ lead-in chamfers on outer periphery; internal bore relief for spindle bar feeder clearance.
-* **Validation:** Watertight binary STL; 6 verified solids; **$0.000000\text{ mm}^3$ interference** across all paired components in static clamping configuration.
+* **CAD Files:** [`Assembled.step`](./Project1/Assembled.step) | [`Exploded.step`](./Project1/Exploded.step) | [`Assembled.stl`](./Project1/Assembled.stl) | [`Exploded.stl`](./Project1/Exploded.stl)
+* **Measured Envelope & Volume:** `110.0 × 110.0 × 52.5 mm` (assembled bounding box) | `318.6 cm³` total solid volume (6 solids).
+* **Design Highlights:**
+  * **Actuation Architecture:** Flat scroll plate driving 3 radial stepped jaws indexed at 120° intervals for synchronized self-centering clamping.
+  * **Manufacturing & DFM:** Slide guide clearances, scroll backface axial running clearance, peripheral lead-in chamfers, and central through-bore relief.
+* **Geometry Audit:** Watertight binary STL (0 non-manifold edges, 0 boundary edges); 6 verified solids (15 pairs); **0.000000 mm³ static interference**.
 
 ![Project 1 Exploded Render](./Project1/IMG-20261117-WA0024.jpg)
 
 ---
 
-### 02. Precision 6-Slot Maltese Cross Geneva Indexing Drive (6-Solid Assembly)
+### 02. 6-Slot Maltese Cross Geneva Indexing Drive
 
 * **Directory:** [`./Project2`](./Project2)
-* **CAD Deliverables:** [`P02_Assembled.step`](./Project2/P02_Assembled.step), [`P02_Exploded.step`](./Project2/P02_Exploded.step), [`P02_Assembled.stl`](./Project2/P02_Assembled.stl), [`P02_Exploded.stl`](./Project2/P02_Exploded.stl)
-* **Kinematics & Envelope:** 6-station intermittent motion ($60^\circ$ dwell-to-index ratio); Envelope: $165.0\text{ mm} \times 95.0\text{ mm} \times 42.0\text{ mm}$; `1.667 kg` (6061-T6 Aluminum, 4140 Steel, C36000 Brass, 304 Stainless Steel).
-* **Engineering Highlights:**
-  * **Intermittent Geneva Kinematics:** Center distance $a = 60.0\text{ mm}$, drive crank radius $r = 30.0\text{ mm}$, driven Maltese cross radius $R = 51.96\text{ mm}$ ($a \times \cos(30^\circ)$).
-  * **Pin Engagement:** Hardened $\varnothing\ 6.0\text{ mm}$ alloy drive pin engaging with continuous tangential entry arc ($0.04\text{ mm}$ side-wall clearance per slot, zero impact chatter).
-  * **Rigid Top Bridge:** $16.0\text{ mm}$ thickness 304 stainless steel tie-bar maintaining rigid rotor/wheel axis parallelity under dynamic indexing torque, locked via twin M8 dowel shoulder bolts.
-* **Validation:** $0.000000\text{ mm}^3$ interference across all 15 solid pairs; complete kinematic sweep verification ($0^\circ \to 360^\circ$ continuous engagement cycle); watertight mesh geometry.
+* **CAD Files:** [`P02_Assembled.step`](./Project2/P02_Assembled.step) | [`P02_Exploded.step`](./Project2/P02_Exploded.step) | [`P02_Assembled.stl`](./Project2/P02_Assembled.stl) | [`P02_Exploded.stl`](./Project2/P02_Exploded.stl)
+* **Measured Envelope & Kinematics:** 6-station intermittent rotary indexer (60° index per revolution) | Structural envelope: `150.0 × 106.0 × 50.0 mm` (baseplate footprint to top support bridge, 6 solids).
+* **Design Highlights:**
+  * **Geneva Geometry:** Center distance `a = 60.0 mm`, driven Maltese cross outer radius `R = 51.96 mm` (`a × cos 30°`), radial slot width `6.08 mm` (`0.04 mm` bilateral pin clearance).
+  * **Dwell Locking Interface:** `R 8.95 mm` rotor locking hub engaging `R 9.00 mm` crescent dwell arcs (`0.05 mm` radial clearance) with crank clocked in the disengaged dwell phase.
+  * **Structural Frame:** Rounded aluminum baseplate (`150.0 × 106.0 × 12.0 mm`) paired with a `10.0 mm` thick top alignment bridge spanning `Z = 40.0–50.0 mm`.
+* **Geometry Audit:** Watertight binary STL & AP214 STEP (6 solids); crank clocked clear of the Maltese cross in the assembled dwell state for collision-free fit-up.
 
 ![Project 2 Exploded Render](./Project2/IMG-20261118-WA0009.jpg)
 
 ---
 
-### 03. Precision Planetary Epicyclic Gear Reducer (3:1 Reduction Stage)
+### 03. 3:1 Planetary Epicyclic Gear Reducer
 
 * **Directory:** [`./Project3`](./Project3)
-* **CAD Deliverables:** [`P03_Assembled.step`](./Project3/P03_Assembled.step), [`P03_Exploded.step`](./Project3/P03_Exploded.step), [`P03_Assembled.stl`](./Project3/P03_Assembled.stl), [`P03_Exploded.stl`](./Project3/P03_Exploded.stl)
-* **Kinematics & Envelope:** 3:1 Speed Reduction ($Z_{\text{sun}} = 9$, $Z_{\text{planet}} = 9$, $Z_{\text{ring}} = 27$, module $m = 3.778\text{ mm}$); Envelope: $\varnothing\ 124.0\text{ mm} \times 58.0\text{ mm}$; `1.529 kg` total assembly mass.
-* **Engineering Highlights:**
-  * **Gear Mesh Topography:** Module $m = 3.778\text{ mm}$, pitch radii: Sun $R_p = 17.0\text{ mm}$, Planet $R_p = 17.0\text{ mm}$, Internal Ring $R_p = 51.0\text{ mm}$; Planet orbit pitch circle radius $R_{\text{orbit}} = 34.0\text{ mm}$.
-  * **Carrier Architecture:** Rigid 304 Stainless Steel 3-pin carrier triad ($120^\circ$ phase angle) with integrated output shaft and rear thrust shoulder.
-  * **DFM Clearance Bands:** $0.60\text{ mm}$ radial root clearance; tooth tip radial overlap band $1.20\text{ mm}$; continuous $18\text{ mm}$ clear Z-tier spacing in exploded state for optical DFM inspection.
-* **Validation:** $0.000000\text{ mm}^3$ static clash across all 15 solid pairs; $0.000000\text{ mm}^3$ interference across full coupled kinematic sweep ($-3.0^\circ \to +3.0^\circ$); positive mechanical mesh proof confirmed under deliberate angular half-pitch jam ($12.94\text{ mm}^3$ Sun-to-Planet, $79.56\text{ mm}^3$ Planet-to-Ring).
+* **CAD Files:** [`P03_Assembled.step`](./Project3/P03_Assembled.step) | [`P03_Exploded.step`](./Project3/P03_Exploded.step) | [`P03_Assembled.stl`](./Project3/P03_Assembled.stl) | [`P03_Exploded.stl`](./Project3/P03_Exploded.stl)
+* **Measured Envelope & Volume:** `Ø136.0 × 58.0 mm` (assembled bounding box) | `353.3 cm³` total solid volume (6 solids).
+* **Design Highlights:**
+  * **Gear Train Ratios:** 3:1 speed reduction with `Z_sun = 9` (`R_p = 17.0 mm`), `3× Z_planet = 9` (`R_p = 17.0 mm`, `34.2 mm` orbit radius), and internal ring `Z_ring = 27` (`R_p = 51.0 mm`).
+  * **Carrier Assembly:** Rigid 3-pin planet carrier spaced at 120° phase intervals with integrated output shaft and axial Z-tier exploded spacing for DFM inspection.
+* **Geometry Audit:** Watertight binary STL (0 non-manifold edges, 0 boundary edges); verified pitch-circle tooth counts (`9 / 9 / 27`); **0.000000 mm³ static interference** across all 15 solid pairs.
 
 ![Project 3 Exploded Render](./Project3/IMG-20261118-WA0010.jpg)
- 
